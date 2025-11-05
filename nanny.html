@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши помощницы - Василёк</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nanny.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo">
+                    <i class="bi bi-flower1"></i>
+                    <span>Василёк</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="nanny.html">Наши помощницы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Каталог услуг</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Каталог товаров</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="account.html">Личный кабинет</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="bi bi-cart3"></i> Корзина
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">Наши помощницы</h1>
+                    <p class="lead">Профессиональные педагоги и заботливые няни для ваших детей</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок о команде -->
+    <section class="team-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="team-photo-wrapper">
+                        <img src="команда.jpeg" alt="Наша команда помощниц" class="img-fluid rounded shadow">
+                        <div class="photo-overlay"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="team-info ps-lg-4">
+                        <h2 class="section-title mb-4">Наша дружная команда</h2>
+                        <p class="lead mb-4">В нашем детском пространстве работают только профессиональные педагоги с большим опытом работы с детьми и медицинским образованием.</p>
+                        <div class="team-features">
+                            <div class="feature-item mb-3">
+                                <i class="bi bi-award-fill"></i>
+                                <span>Высшее педагогическое образование</span>
+                            </div>
+                            <div class="feature-item mb-3">
+                                <i class="bi bi-heart-pulse-fill"></i>
+                                <span>Медицинские книжки и справки</span>
+                            </div>
+                            <div class="feature-item mb-3">
+                                <i class="bi bi-clock-fill"></i>
+                                <span>Опыт работы от 3 лет</span>
+                            </div>
+                            <div class="feature-item mb-3">
+                                <i class="bi bi-star-fill"></i>
+                                <span>Регулярное повышение квалификации</span>
+                            </div>
+                        </div>
+                        <div class="stats-row mt-5">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="stat-number">15+</div>
+                                    <div class="stat-label">Профессионалов</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-number">100+</div>
+                                    <div class="stat-label">Довольных детей</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-number">98%</div>
+                                    <div class="stat-label">Положительных отзывов</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карточки сотрудников -->
+    <section class="staff-cards py-5 bg-light-beige">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Знакомьтесь с нашими помощницами</h2>
+                    <p class="lead">Каждая из наших сотрудниц - профессионал с индивидуальным подходом к детям</p>
+                </div>
+            </div>
+
+            <div class="row g-4" id="staffContainer">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Подвал -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo">
+                        <i class="bi bi-flower1"></i>
+                        <span>Василёк</span>
+                    </div>
+                    <p class="mt-3">Детское пространство с кофейней для заботливых родителей и счастливых детей.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Контакты</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt"></i> г. Владимир, ул. Детская, 15</li>
+                        <li><i class="bi bi-telephone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="bi bi-envelope"></i> info@vasilek.ru</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Часы работы</h5>
+                    <ul class="list-unstyled">
+                        <li>Пн-Пт: 9:00 - 21:00</li>
+                        <li>Сб-Вс: 10:00 - 22:00</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-telegram"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Детское пространство "Василёк". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно с подробной информацией -->
+    <div class="modal fade" id="staffModal" tabindex="-1" aria-labelledby="staffModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staffModalLabel">Информация о помощнице</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="staffModalBody">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="nanny.js"></script>
+</body>
+</html>
