@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Василёк - Детское пространство с кофейней</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo">
+                    <i class="bi bi-flower1"></i>
+                    <span>Василёк</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nanny.html">Наши помощницы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Каталог услуг</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Каталог товаров</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="account.html">Личный кабинет</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="bi bi-cart3"></i> Корзина
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный слайдер -->
+    <section class="main-slider">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="IMG_2544.HEIC" class="d-block w-100" alt="Игровая зона">
+                    <div class="carousel-caption">
+                        <h2>Уютное пространство для детей и родителей</h2>
+                        <p>Игровые зоны и развивающие занятия</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG_2824.HEIC" class="d-block w-100" alt="Кофейня">
+                    <div class="carousel-caption">
+                        <h2>Вкусный кофе пока дети играют</h2>
+                        <p>Свежие десерты и ароматный кофе от бариста</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG_2759.HEIC" class="d-block w-100" alt="Занятия">
+                    <div class="carousel-caption">
+                        <h2>Развивающие занятия с педагогами</h2>
+                        <p>Творческие мастер-классы и обучающие программы</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="about py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Добро пожаловать в "Василёк"!</h2>
+                    <p class="lead">Уникальное пространство, где дети играют и развиваются, а родители отдыхают за чашечкой ароматного кофе.</p>
+                    <p>Наше детское пространство создано с любовью к детям и заботой о родителях. Мы объединили безопасную игровую среду для детей с уютной кофейней для взрослых.</p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="bi bi-shield-check"></i>
+                            <span>Безопасные игровые зоны</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-cup-hot"></i>
+                            <span>Профессиональная кофейня</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-person-check"></i>
+                            <span>Опытные педагоги</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="IMG_2564.jpeg" alt="Интерьер" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Факты -->
+    <section class="facts py-5 bg-light-beige">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Почему выбирают нас?</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="fact-card">
+                        <i class="bi bi-people"></i>
+                        <h4>100+</h4>
+                        <p>Счастливых семей</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="fact-card">
+                        <i class="bi bi-clock"></i>
+                        <h4>3 года</h4>
+                        <p>Успешной работы</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="fact-card">
+                        <i class="bi bi-star"></i>
+                        <h4>4.9/5</h4>
+                        <p>Рейтинг по отзывам</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="fact-card">
+                        <i class="bi bi-award"></i>
+                        <h4>15+</h4>
+                        <p>Развивающих программ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Отзывы родителей</h2>
+            <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="review-rating">
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="rating-value">5.0</span>
+                                </div>
+                                <div class="review-date">15.02.2024</div>
+                            </div>
+                            <div class="review-text">
+                                Прекрасное место! Ребенок в восторге от игровой зоны, а я могу спокойно поработать за ноутбуком с чашечкой кофе. Персонал очень внимательный и профессиональный. Обязательно вернемся снова!
+                            </div>
+                            <div class="review-author">
+                                <div class="author-main">
+                                    <i class="bi bi-person-circle"></i>
+                                    <div>
+                                        <strong class="parent-name">Марина Иванова</strong>
+                                        <div class="child-info">
+                                            <i class="bi bi-arrow-return-right"></i>
+                                            <span class="child-name">мама Саши</span>
+                                            <span class="child-age">(4 года)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="review-rating">
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="rating-value">5.0</span>
+                                </div>
+                                <div class="review-date">10.02.2024</div>
+                            </div>
+                            <div class="review-text">
+                                Регулярно посещаем развивающие занятия. Педагоги настоящие профессионалы! Дочь с нетерпением ждет каждое занятие. А кофе здесь один из лучших в городе! Спасибо за вашу работу и теплую атмосферу.
+                            </div>
+                            <div class="review-author">
+                                <div class="author-main">
+                                    <i class="bi bi-person-circle"></i>
+                                    <div>
+                                        <strong class="parent-name">Анна Петрова</strong>
+                                        <div class="child-info">
+                                            <i class="bi bi-arrow-return-right"></i>
+                                            <span class="child-name">мама Полины</span>
+                                            <span class="child-age">(5 лет)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="review-rating">
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star">★</span>
+                                    <span class="rating-value">4.0</span>
+                                </div>
+                                <div class="review-date">08.02.2024</div>
+                            </div>
+                            <div class="review-text">
+                                Идеальное решение для встреч с подругами! Дети под присмотром, играют и развиваются, а мы можем спокойно пообщаться. Очень чисто и безопасно. Единственное - хотелось бы больше места в игровой зоне в выходные дни.
+                            </div>
+                            <div class="review-author">
+                                <div class="author-main">
+                                    <i class="bi bi-person-circle"></i>
+                                    <div>
+                                        <strong class="parent-name">Ольга Сидорова</strong>
+                                        <div class="child-info">
+                                            <i class="bi bi-arrow-return-right"></i>
+                                            <span class="child-name">мама Артема и Димы</span>
+                                            <span class="child-age">(3 года)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="review-rating">
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="rating-value">5.0</span>
+                                </div>
+                                <div class="review-date">05.02.2024</div>
+                            </div>
+                            <div class="review-text">
+                                Впервые привели сына на день рождения друга - теперь ходим постоянно! Отличная организация праздников, вкусные угощения и замечательные аниматоры. Ребенок был в полном восторге, а мы смогли расслабиться и пообщаться с другими родителями.
+                            </div>
+                            <div class="review-author">
+                                <div class="author-main">
+                                    <i class="bi bi-person-circle"></i>
+                                    <div>
+                                        <strong class="parent-name">Дмитрий Козлов</strong>
+                                        <div class="child-info">
+                                            <i class="bi bi-arrow-return-right"></i>
+                                            <span class="child-name">папа Артема</span>
+                                            <span class="child-age">(6 лет)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="review-rating">
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star active">★</span>
+                                    <span class="star">★</span>
+                                    <span class="rating-value">4.0</span>
+                                </div>
+                                <div class="review-date">01.02.2024</div>
+                            </div>
+                            <div class="review-text">
+                                Очень нравится подход к детям! Дочка с удовольствием ходит на творческие мастер-классы. Кофейня на высшем уровне - большой выбор десертов и напитков. Цены немного выше средних, но качество обслуживания оправдывает.
+                            </div>
+                            <div class="review-author">
+                                <div class="author-main">
+                                    <i class="bi bi-person-circle"></i>
+                                    <div>
+                                        <strong class="parent-name">Елена Николаевна</strong>
+                                        <div class="child-info">
+                                            <i class="bi bi-arrow-return-right"></i>
+                                            <span class="child-name">мама Вероники</span>
+                                            <span class="child-age">(5 лет)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма добавления отзыва -->
+    <section class="add-review">
+        <div class="container">
+            <h3 class="text-center mb-4">Оставьте свой отзыв</h3>
+            <form id="reviewForm" class="review-form">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" id="reviewName" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" id="childName" placeholder="Имя ребенка" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="number" class="form-control" id="childAge" placeholder="Возраст ребенка" min="1" max="10" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="reviewText" rows="4" placeholder="Поделитесь вашими впечатлениями о нашем пространстве..." required></textarea>
+                </div>
+                <div class="text-center mb-4">
+                    <p class="mb-2">Оцените наше пространство:</p>
+                    <div class="star-rating">
+                        <span class="star" data-rating="1">★</span>
+                        <span class="star" data-rating="2">★</span>
+                        <span class="star" data-rating="3">★</span>
+                        <span class="star" data-rating="4">★</span>
+                        <span class="star" data-rating="5">★</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Отправить отзыв</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Часто задаваемые вопросы -->
+    <section class="faq py-5 bg-light-beige">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Часто задаваемые вопросы</h2>
+            <div class="accordion faq-accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            <div class="faq-icon">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            С какого возраста можно приходить в ваше пространство?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Мы принимаем детей от 1 года до 10 лет. Для разных возрастных групп предусмотрены специальные игровые зоны и развивающие программы. Малыши до 3 лет должны находиться в сопровождении родителей.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            <div class="faq-icon">
+                                <i class="bi bi-calendar-check"></i>
+                            </div>
+                            Нужна ли предварительная запись?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Для посещения игровой зоны запись не требуется. Для участия в развивающих занятиях и мастер-классах рекомендуем записываться заранее, так как количество мест ограничено.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            <div class="faq-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            Можно ли оставить ребенка под присмотром?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Да, у нас есть услуга "Няня на час". Наши помощницы - опытные педагоги с медицинскими книжками и профильным образованием. Вы можете оставить ребенка под присмотром на необходимое время.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            <div class="faq-icon">
+                                <i class="bi bi-wifi"></i>
+                            </div>
+                            Есть ли у вас wi-fi и розетки для работы?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Да, для наших гостей предоставляется бесплатный высокоскоростной wi-fi, а также удобные рабочие места с розетками для ноутбуков и других устройств. Также есть принтер для печати документов.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            <div class="faq-icon">
+                                <i class="bi bi-credit-card"></i>
+                            </div>
+                            Какие способы оплаты вы принимаете?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Мы принимаем наличные, банковские карты (Visa, MasterCard, Мир), а также бесконтактные платежи через Apple Pay и Google Pay. Также действует система абонементов со скидками.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo">
+                        <i class="bi bi-flower1"></i>
+                        <span>Василёк</span>
+                    </div>
+                    <p class="mt-3">Детское пространство с кофейней для заботливых родителей и счастливых детей.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Контакты</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt"></i> г. Владимира, ул. Детская, 15</li>
+                        <li><i class="bi bi-telephone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="bi bi-envelope"></i> info@vasilek.ru</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Часы работы</h5>
+                    <ul class="list-unstyled">
+                        <li>Пн-Пт: 9:00 - 21:00</li>
+                        <li>Сб-Вс: 10:00 - 22:00</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-telegram"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Детское пространство "Василёк". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
