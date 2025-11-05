@@ -1,0 +1,501 @@
+/* Заголовок страницы */
+.page-header {
+    background: linear-gradient(135deg, var(--purple), var(--dark-purple));
+    color: white;
+    margin-top: 76px;
+}
+
+.page-header h1 {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Вводный текст */
+.intro-section {
+    background: white;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--text-dark);
+    margin-bottom: 0;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-filter {
+    background: var(--light-beige);
+    color: var(--text-dark);
+    border: 2px solid var(--light-beige);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-filter:hover,
+.btn-filter.active {
+    background: var(--purple);
+    color: white;
+    border-color: var(--purple);
+    transform: translateY(-2px);
+}
+
+/* Карточки услуг */
+.service-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(138, 79, 255, 0.2);
+    border-color: var(--purple);
+}
+
+.service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image {
+    transform: scale(1.05);
+}
+
+.service-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-category {
+    display: inline-block;
+    background: var(--light-beige);
+    color: var(--purple);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border: 1px solid var(--light-purple);
+}
+
+.service-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--dark-purple);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.service-description {
+    color: var(--text-light);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.service-details {
+    margin-bottom: 20px;
+}
+
+.service-detail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+.service-detail i {
+    color: var(--purple);
+    font-size: 0.9rem;
+    width: 16px;
+}
+
+.service-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--purple);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-details {
+    background: transparent;
+    color: var(--purple);
+    border: 2px solid var(--purple);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.btn-details:hover {
+    background: var(--purple);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-add-to-cart {
+    background: linear-gradient(135deg, var(--purple), var(--dark-purple));
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-add-to-cart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(138, 79, 255, 0.3);
+    color: white;
+}
+
+.btn-add-to-cart.added {
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+/* Абонементы */
+.subscriptions {
+    background: white;
+}
+
+.subscription-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 2px solid var(--light-beige);
+    transition: all 0.3s ease;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(138, 79, 255, 0.15);
+    border-color: var(--purple);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--purple), var(--dark-purple));
+    color: white;
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.subscription-header {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--light-beige);
+}
+
+.subscription-header h4 {
+    color: var(--dark-purple);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subscription-header .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--purple);
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.subscription-header .period {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.subscription-features {
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.subscription-features .feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.subscription-features .feature i {
+    color: var(--purple);
+}
+
+.btn-subscription {
+    background: linear-gradient(135deg, var(--purple), var(--dark-purple));
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-subscription:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(138, 79, 255, 0.3);
+    color: white;
+}
+
+.btn-subscription.added {
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+/* FAQ */
+.services-faq {
+    background: var(--light-beige);
+}
+
+.faq-accordion .accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 15px !important;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    background: white;
+}
+
+.faq-accordion .accordion-button {
+    background: linear-gradient(135deg, white, var(--light-beige));
+    color: var(--text-dark);
+    font-weight: 600;
+    padding: 20px;
+    font-size: 1rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, var(--purple), var(--dark-purple));
+    color: white;
+    box-shadow: none;
+}
+
+.faq-accordion .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238a4fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.faq-accordion .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: scale(1.2) rotate(-180deg);
+}
+
+.faq-accordion .accordion-body {
+    padding: 20px;
+    background: white;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    border-top: 1px solid var(--light-beige);
+}
+
+/* Модальное окно услуги */
+.service-modal-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.service-modal-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.service-modal-info {
+    flex: 1;
+}
+
+.service-modal-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--dark-purple);
+    margin-bottom: 10px;
+}
+
+.service-modal-category {
+    display: inline-block;
+    background: var(--light-beige);
+    color: var(--purple);
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    border: 1px solid var(--light-purple);
+}
+
+.service-modal-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--purple);
+    margin-bottom: 20px;
+}
+
+.service-modal-description {
+    line-height: 1.7;
+    color: var(--text-dark);
+    margin-bottom: 25px;
+}
+
+.service-modal-features {
+    margin-bottom: 25px;
+}
+
+.service-modal-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.service-modal-feature i {
+    color: var(--purple);
+    width: 20px;
+}
+
+.service-modal-details {
+    background: var(--light-beige);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border-left: 4px solid var(--purple);
+}
+
+.service-modal-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-modal-add-to-cart {
+    background: linear-gradient(135deg, var(--purple), var(--dark-purple));
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-modal-add-to-cart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(138, 79, 255, 0.3);
+    color: white;
+}
+
+.btn-modal-add-to-cart.added {
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+/* Счетчик корзины */
+.cart-count {
+    background: var(--purple) !important;
+    font-size: 0.7rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-filter {
+        width: 200px;
+    }
+    
+    .service-actions {
+        flex-direction: column;
+    }
+    
+    .service-modal-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .service-modal-image {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .service-modal-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .intro-text {
+        font-size: 1rem;
+    }
+    
+    .service-content {
+        padding: 20px;
+    }
+    
+    .subscription-card {
+        padding: 20px;
+    }
+    
+    .subscription-header .price {
+        font-size: 2rem;
+    }
+}
