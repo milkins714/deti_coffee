@@ -1,0 +1,331 @@
+/* Заголовок страницы */
+.page-header {
+    background: linear-gradient(135deg, var(--purple), var(--dark-purple));
+    color: white;
+    margin-top: 76px;
+}
+
+.page-header h1 {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Блок о команде */
+.team-section {
+    background: white;
+}
+
+.team-photo-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(138, 79, 255, 0.2);
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(138, 79, 255, 0.1), rgba(106, 27, 154, 0.1));
+    pointer-events: none;
+}
+
+.team-info .section-title {
+    color: var(--dark-purple);
+    font-weight: bold;
+    position: relative;
+}
+
+.team-info .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--purple);
+}
+
+.team-features .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+.team-features .feature-item i {
+    color: var(--purple);
+    font-size: 1.3rem;
+    width: 25px;
+}
+
+.stats-row .stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--purple);
+    line-height: 1;
+}
+
+.stats-row .stat-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
+/* Карточки сотрудников */
+.staff-cards {
+    background: var(--light-beige);
+}
+
+.staff-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    height: 100%;
+}
+
+.staff-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(138, 79, 255, 0.2);
+    border-color: var(--purple);
+}
+
+.staff-photo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.staff-card:hover .staff-photo {
+    transform: scale(1.05);
+}
+
+.staff-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.staff-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--dark-purple);
+    margin-bottom: 10px;
+}
+
+.staff-position {
+    color: var(--purple);
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.staff-experience {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.staff-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.skill-tag {
+    background: var(--light-beige);
+    color: var(--purple);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid var(--light-purple);
+}
+
+.btn-details {
+    background: linear-gradient(135deg, var(--purple), var(--dark-purple));
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-details:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(138, 79, 255, 0.3);
+    color: white;
+}
+
+/* Модальное окно */
+.modal-content {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--purple), var(--dark-purple));
+    color: white;
+    border-radius: 20px 20px 0 0;
+    border: none;
+    padding: 25px;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.staff-detail-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.staff-detail-photo {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.staff-detail-info {
+    flex: 1;
+}
+
+.staff-detail-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--dark-purple);
+    margin-bottom: 10px;
+}
+
+.staff-detail-position {
+    color: var(--purple);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.staff-detail-experience {
+    background: var(--light-beige);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--purple);
+}
+
+.detail-features {
+    margin-bottom: 25px;
+}
+
+.detail-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.detail-feature i {
+    color: var(--purple);
+    width: 20px;
+}
+
+.staff-detail-skills {
+    margin-bottom: 25px;
+}
+
+.staff-detail-skills h6 {
+    color: var(--dark-purple);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag-large {
+    background: var(--light-beige);
+    color: var(--purple);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid var(--light-purple);
+}
+
+.staff-detail-bio {
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .team-section .row {
+        flex-direction: column;
+    }
+    
+    .team-info {
+        padding-left: 0 !important;
+        margin-top: 30px;
+    }
+    
+    .staff-detail-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .staff-detail-photo {
+        width: 150px;
+        height: 200px;
+        margin: 0 auto 20px;
+    }
+    
+    .request-card .row {
+        flex-direction: column;
+    }
+    
+    .stats-row .col-4 {
+        margin-bottom: 20px;
+    }
+    
+    .stats-row .stat-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .request-card {
+        padding: 25px;
+    }
+    
+    .modal-body {
+        padding: 20px;
+    }
+    
+    .staff-detail-name {
+        font-size: 1.5rem;
+    }
+}
